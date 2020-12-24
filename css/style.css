@@ -15,6 +15,9 @@ html {
   --primary-white-color: #ffffff;
   --dark-bg-color: #2F303A;
   --middle-bg-color: #F5F4FA;
+  --header-border-bottom-color: #ECECEC;
+  --gradient-bg-color: rgba(47, 48, 58, 0.4);
+  --hero-bg-color: rgba(47, 48, 58, 0.4);
   --main-font-weight: 700;
   --secondary-font-weight: 400;
 }
@@ -67,7 +70,7 @@ img {
 }
 
 header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid var(--header-border-bottom-color);
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -132,7 +135,6 @@ header {
 }
 
 .hero {
-  background-color: var(--dark-bg-color);
   text-align: center;
   padding: 200px 0;
 }
@@ -409,4 +411,22 @@ header {
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
+}
+
+/* Overlay */
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hero-bg-color);
+  background-image: linear-gradient( 
+    to right, 
+    var(--gradient-bg-color), 
+    var(--gradient-bg-color) 
+  ),
+  url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
