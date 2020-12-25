@@ -18,6 +18,7 @@ html {
   --header-border-bottom-color: #ECECEC;
   --gradient-bg-color: rgba(47, 48, 58, 0.4);
   --hero-bg-color: rgba(47, 48, 58, 0.4);
+  --icon-bacground: #F5F4FA;
   --main-font-weight: 700;
   --secondary-font-weight: 400;
 }
@@ -229,6 +230,21 @@ header {
   font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 1.71;
+}
+
+.fetures-decoration {
+  width: 270px;
+  height: 120px;
+  background: var(--icon-bacground);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.features-icon { 
+  width: 70px;
 }
 
 /* Work section*/
