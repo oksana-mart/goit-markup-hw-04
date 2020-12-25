@@ -326,15 +326,33 @@ header {
 
 .clients-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
+.clients-list>li:not(:last-child) {
+  margin-right: 30px;
+}
 .client-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.client-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  outline: none;
+  border: 1px solid #2196F3;
 }
 
 /* Footer */
