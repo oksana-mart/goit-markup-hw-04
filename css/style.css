@@ -19,6 +19,7 @@ html {
   --gradient-bg-color: rgba(47, 48, 58, 0.4);
   --hero-bg-color: rgba(47, 48, 58, 0.4);
   --icon-bacground: #F5F4FA;
+  --icon-main-color: #AFB1B8;
   --main-font-weight: 700;
   --secondary-font-weight: 400;
 }
@@ -104,6 +105,7 @@ header {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 
 .nav-link.current {
@@ -128,15 +130,24 @@ header {
   color: inherit;
   display: flex;
   align-items: center;
+  fill:var(--main-text-color);
 }
 
 .contacts-header:hover,
 .contacts-header:focus,
 .contacts-header:active {
-  color: var(--accent-color);  
+  color: var(--accent-color);
+  outline: none;
+  fill: var(--accent-color);
 }
 
-.contacts-icon {
+.icon-mail {
+  max-width: 16px;
+  margin-right: 10px;
+}
+
+.icon-tel {
+  max-width: 10px;
   margin-right: 10px;
 }
 
@@ -338,8 +349,12 @@ header {
 .link-webs {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
+  border: none;
+  border-radius: 50%;
+  fill: var(--icon-main-color);
 }
 
 .icons-webs {
@@ -347,9 +362,18 @@ header {
   height: 20px;
 }
 
+.link-webs:hover,
+.link-webs:focus {
+  background: var(--accent-color);
+  fill: var(--primary-white-color);
+  outline: none;
+}
+
+
 .webs-list>li:not(:last-child) {
   margin-right: 10px;
 }
+
 
 /* Clients */
 .clients {
@@ -385,15 +409,17 @@ header {
   justify-content: center;
   width: 170px;
   height: 90px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--icon-main-color);
   box-sizing: border-box;
   border-radius: 4px;
+  fill: var(--icon-main-color);
 }
 
 .client-link:hover,
 .client-link:focus {
   outline: none;
-  border: 1px solid #2196F3;
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -401,6 +427,11 @@ header {
   background-color: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: flex-start;
 }
 
 .logo-footer {
@@ -417,6 +448,49 @@ header {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  width: 231px;
+}
+
+.footer-column {
+  margin-right: 70px;
+}
+
+.footer-our-links {
+  margin-top: 12px;
+}
+
+.foter-text {
+  font-size: 14px;
+  line-height: 1,14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--primary-white-color);
+}
+
+.footer-links:hover,
+.footer-links:focus {
+  background: var(--accent-color);
+  outline: none;
+} 
+
+.footer-webs>li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icons {
+  width: 20px;
+  height: 20px;
 }
 
 .home-address {
@@ -436,6 +510,10 @@ header {
 
 .link-footer {
   height: 21px;
+}
+
+.footer-webs {
+  display: flex;
 }
 
 /* Portfolio page */
