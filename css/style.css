@@ -141,13 +141,8 @@ header {
   fill: var(--accent-color);
 }
 
-.icon-mail {
-  max-width: 16px;
-  margin-right: 10px;
-}
-
+.icon-mail,
 .icon-tel {
-  max-width: 10px;
   margin-right: 10px;
 }
 
