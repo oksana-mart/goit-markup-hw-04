@@ -429,7 +429,7 @@ header {
   padding-bottom: 60px;
 }
 
-.footer-flex {
+.footer-wrapper {
   display: flex;
   align-items: flex-start;
 }
