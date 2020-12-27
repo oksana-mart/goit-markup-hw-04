@@ -450,8 +450,8 @@ header {
   margin-right: 70px;
 }
 
-.footer-our-links {
-  margin-top: 12px;
+.footer-wrapper {
+  align-items: baseline;
 }
 
 .foter-text {
