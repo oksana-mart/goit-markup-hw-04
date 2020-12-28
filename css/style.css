@@ -288,9 +288,6 @@ header {
 /* Team section */
 .team {
   background-color: var(--middle-bg-color);
-}
-
-.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -349,18 +346,19 @@ header {
   height: 44px;
   border: none;
   border-radius: 50%;
-  fill: var(--icon-main-color);
+  color: var(--icon-main-color);
 }
 
 .icons-webs {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 .link-webs:hover,
 .link-webs:focus {
   background: var(--accent-color);
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
   outline: none;
 }
 
@@ -396,6 +394,7 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+  fill:currentColor;
 }
 
 .client-link {
@@ -407,14 +406,14 @@ header {
   border: 1px solid var(--icon-main-color);
   box-sizing: border-box;
   border-radius: 4px;
-  fill: var(--icon-main-color);
+  color: var(--icon-main-color);
 }
 
 .client-link:hover,
 .client-link:focus {
   outline: none;
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Footer */
@@ -470,7 +469,7 @@ header {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 .footer-links:hover,
@@ -486,6 +485,7 @@ header {
 .footer-icons {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 .home-address {
